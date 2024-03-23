@@ -1,25 +1,20 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Błażej Miśtak" />
         <meta name="description" content="Money calculator" />
         <meta name="keywords" content="money, calculator, " />
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="styles/nav_styles.css" />
+        <link rel="stylesheet" href="styles/main_styles.css" />
+        <link rel="stylesheet" href="styles/aside_styles.css" />
         <script src="script.js"></script>
         <title>Money calculator</title>
     </head>
     <body>
         <nav>
             <h1>Money calculator</h1>
-            <!--<div class="nav_functions">
-                <button class="theme" onclick="unavaliable()"></button>
-                <button
-                    class="change_language"
-                    onclick="unavaliable()"
-                ></button>
-            </div><-->
         </nav>
         <main>
             <p>
@@ -30,6 +25,137 @@
                 for more information on new features, source code and planned
                 activities.
             </p>
+            <section id="money_calculator">
+                <hr />
+                <p>Add amount of money, then click calculate.</p>
+                <p class="conditions">
+                    The number entered must be an integer and must be greater
+                    than or equal to 0. Otherwise, the result will be incorrect.
+                </p>
+                <section class="calculator">
+                    <form>
+                        <div class="calculator_wrapper">
+                            <p>500 <span>PLN</span></p>
+                            <input type="number" id="pln500" min="0" />
+                        </div>
+                        <div class="calculator_wrapper">
+                            <p>200 <span>PLN</span></p>
+                            <input type="number" id="pln200" min="0" />
+                        </div>
+                        <div class="calculator_wrapper">
+                            <p>100 <span>PLN</span></p>
+                            <input type="number" id="pln100" min="0" />
+                        </div>
+                        <div class="calculator_wrapper">
+                            <p>50 <span>PLN</span></p>
+                            <input
+                                type="number"
+                                id="pln50"
+                                style="margin-left: 8px"
+                                min="0"
+                            />
+                        </div>
+                        <div class="calculator_wrapper">
+                            <p>20 <span>PLN</span></p>
+                            <input
+                                type="number"
+                                id="pln20"
+                                style="margin-left: 8px"
+                                min="0"
+                            />
+                        </div>
+                        <div class="calculator_wrapper">
+                            <p>10 <span>PLN</span></p>
+                            <input
+                                type="number"
+                                id="pln10"
+                                style="margin-left: 8px"
+                                min="0"
+                            />
+                        </div>
+                        <div class="calculator_wrapper">
+                            <p>5 <span>PLN</span></p>
+                            <input
+                                type="number"
+                                id="pln5"
+                                style="margin-left: 18px"
+                                min="0"
+                            />
+                        </div>
+                        <div class="calculator_wrapper">
+                            <p>2 <span>PLN</span></p>
+                            <input
+                                type="number"
+                                id="pln2"
+                                style="margin-left: 18px"
+                                min="0"
+                            />
+                        </div>
+                        <div class="calculator_wrapper">
+                            <p>1 <span>PLN</span></p>
+                            <input
+                                type="number"
+                                id="pln1"
+                                style="margin-left: 18px"
+                                min="0"
+                            />
+                        </div>
+                        <div class="calculator_wrapper">
+                            <p>0.5 <span>PLN</span></p>
+                            <input
+                                type="number"
+                                id="pln0.5"
+                                style="margin-left: 7px"
+                                min="0"
+                            />
+                        </div>
+                        <div class="calculator_wrapper">
+                            <p>0.2 <span>PLN</span></p>
+                            <input
+                                type="number"
+                                id="pln0.2"
+                                style="margin-left: 7px"
+                                min="0"
+                            />
+                        </div>
+                        <div class="calculator_wrapper">
+                            <p>0.1 <span>PLN</span></p>
+                            <input
+                                type="number"
+                                id="pln0.1"
+                                style="margin-left: 7px"
+                                min="0"
+                            />
+                        </div>
+                        <div class="calculator_wrapper">
+                            <p>0.05 <span>PLN</span></p>
+                            <input type="number" id="pln0.05" min="0" />
+                        </div>
+                        <div class="calculator_wrapper">
+                            <p>0.02 <span>PLN</span></p>
+                            <input type="number" id="pln0.02" min="0" />
+                        </div>
+                        <div class="calculator_wrapper">
+                            <p>0.01 <span>PLN</span></p>
+                            <input type="number" id="pln0.01" min="0" />
+                        </div>
+                        <button class="calculate_button" onclick="calculate()">
+                            Calculate
+                        </button>
+                    </form>
+                </section>
+            </section>
         </main>
+        <footer>
+            <p>
+                2024 Błażej Miśtak. All rights reserved.
+                <span
+                    >Contact:
+                    <a href="mailto:blazej.mistak.bm@gmail.com>"
+                        >blazej.mistak.bm@gmail.com</a
+                    ></span
+                >
+            </p>
+        </footer>
     </body>
 </html>

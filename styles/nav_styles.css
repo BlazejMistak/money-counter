@@ -1,0 +1,16 @@
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+}
+
+nav h1 {
+    margin: 7px;
+    color: #ffffff;
+}
+
+nav div {
+    margin-left: auto;
+}
